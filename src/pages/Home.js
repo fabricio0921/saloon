@@ -89,9 +89,10 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <Image
+        <View style={styles.containerBody}>
+        <Image
         style={styles.Logo}
-        source={require('../assets/salao2.png')}
+        source={require('../assets/salao-de-beleza.png')}
       />
         
 
@@ -117,12 +118,15 @@ export default class Home extends Component {
         </TouchableOpacity>
         <View style={styles.containerBaixo}>
           <TouchableOpacity >
-            <Text>Esqueceu senha</Text>
+            <Text style={styles.txtBt}>Esqueceu senha</Text>
           </TouchableOpacity>
-          <TouchableOpacity >
-            <Text>Cadastrar</Text>
+          <TouchableOpacity onPress={()=>this.props.navigation.navigate("NovoUsuario")} >
+            <Text style={styles.txtBt}>Cadastrar</Text>
           </TouchableOpacity>
         </View>
+
+        </View>
+      
       </View>
     );
   }
@@ -131,9 +135,15 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#74FAFF",
+    backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",
+  },
+  containerBody:{
+    width:"85%",
+    justifyContent:'center',
+    alignItems:'center'
+    
   },
   textInput: {
     width: "90%",
@@ -158,14 +168,18 @@ const styles = StyleSheet.create({
     width: "90%",
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10,
+    marginTop:10
   },
   Logo:{
     width:100,
     height:100,
     marginBottom:20,
+    borderRadius:50
     
     
+  },
+  txtBt:{
+    color:"#6588A6"
   }
 });
 AppRegistry.registerComponent("login", () => login);
