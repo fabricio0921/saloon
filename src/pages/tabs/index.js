@@ -14,17 +14,17 @@ export default function Tabs() {
     <Tab.Navigator>
       <Tab.Screen name="Horários Disponiveis" component={Home} options={
         {tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="clock" color='orange' size={30} />
+            <MaterialCommunityIcons name="clock" color='#6588A6' size={30} />
           ),}
       } />
       <Tab.Screen name="Horários Marcados" component={Store} options={
         {tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="pencil" color='orange' size={30} />
+            <MaterialCommunityIcons name="pencil" color='#6588A6' size={30} />
           ),}
       }/>
       <Tab.Screen name="Meu Histórico" component={Stories} options={
         {tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="archive" color='orange' size={30} />
+            <MaterialCommunityIcons name="archive" color='#6588A6' size={30} />
           ),
           tabBarBadge: 3,
           }

@@ -40,13 +40,13 @@ const styles = StyleSheet.create({
     btHorarios:{
         width:'90%',
         height:50,
-        borderWidth:1,
-        borderColor:'pink',
+        borderWidth:2,
+        borderColor:'#6588A6',
         borderRadius:3,
         justifyContent:'center',
         alignItems:'center',
         fontSize:20,
-        backgroundColor:'pink',
+        backgroundColor:'white',
         shadowColor:'grey',
         margin:5
         

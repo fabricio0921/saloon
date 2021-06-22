@@ -45,9 +45,11 @@ const styles = StyleSheet.create({
     marginBottom:30
   },
   inputData:{
-    width:'70%',
+    width:'80%',
     height:150,
-    backgroundColor:'pink',
+    borderWidth:2,
+    borderColor:'#6588A6',
+    backgroundColor:'#6588A6',
     justifyContent:'center',
     alignItems:'center',
     borderRadius:15,
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
   btBuscaDatas:{
     width:'40%',
     height:50,
-    backgroundColor:'pink',
+    backgroundColor:'#6588A6',
     justifyContent:'center',
     alignItems:'center',
     borderRadius:5,

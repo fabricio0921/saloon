@@ -67,15 +67,15 @@ const styles = StyleSheet.create({
     padding:30
   },
   btServico: {
-    width: "90%",
+    width: "95%",
     height: 100,
-    borderColor: "pink",
-    borderWidth: 1,
+    borderColor: "#6588A6",
+    borderWidth: 2,
     borderRadius: 3,
     margin:5,
     justifyContent:'center',
     alignItems:'center',
-    backgroundColor:'pink'
+    backgroundColor:'white'
     
   },
   textBtServico:{
